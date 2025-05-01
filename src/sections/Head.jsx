@@ -29,12 +29,30 @@ function Navigation() {
           Work
         </a>
       </li>
+
       <li>
         <a
           className="text-neutral-400 hover:text-white transition-colors"
           href="#experience"
         >
           Experience
+        </a>
+      </li>
+
+      <li>
+        <a
+          className="text-neutral-400 hover:text-white transition-colors"
+          href="#skills"
+        >
+          Skills
+        </a>
+      </li>
+      <li>
+        <a
+          className="text-neutral-400 hover:text-white transition-colors"
+          href="#blog"
+        >
+          Blogs
         </a>
       </li>
       <li>

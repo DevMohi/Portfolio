@@ -243,39 +243,41 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Data Analyst Intern",
+    job: "Sols Energy",
+    date: "Sep 2022 – Dec 2022",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Utilized Hubspot for data analysis, reporting, and database management.",
+      "Assisted in cleaning and maintaining data, ensuring accuracy and consistency.",
+      "Documented data analysis processes and provided regular updates on improvement progress.",
+      "Automated data-related tasks using Hubspot and Zapier to streamline workflows.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Web Developer Intern",
+    job: "Sols Energy",
+    date: "Dec 2022 – May 2023",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Created dynamic web pages using Builder.io, enhancing website functionality and user engagement.",
+      "Developed and integrated custom components in the Qwik framework for scalable web solutions.",
+      "Applied Tailwind CSS to build visually appealing and responsive UI.",
+      "Collaborated with a team of developers via GitHub, ensuring efficient code sharing and feature integration.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "WordPress Developer",
+    job: "Syuneart Collective",
+    date: "Jan 2024 – May 2024",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Developed a dynamic, responsive WordPress website with a focus on user experience and performance.",
+      "Collaborated with a cross-functional team to implement design and functionality enhancements.",
+      "Gained experience in website design principles and best practices.",
+      "Optimized site performance, ensuring fast load times and mobile responsiveness.",
+      "Implemented SEO best practices for improved search engine visibility.",
     ],
   },
 ];
+
 export const reviews = [
   {
     name: "Jack",

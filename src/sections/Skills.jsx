@@ -4,6 +4,7 @@ import { reviews } from "../constants"; // Use skills data instead of reviews
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
+// eslint-disable-next-line react/prop-types
 const SkillCard = ({ img, name }) => {
   return (
     <figure
@@ -27,7 +28,7 @@ const SkillCard = ({ img, name }) => {
 
 export default function Skills() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space">
+    <div className="items-start mt-25 md:mt-35 c-space" id="skills">
       <h2 className="text-heading text-center">Skills</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
