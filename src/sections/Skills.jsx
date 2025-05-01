@@ -1,49 +1,43 @@
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
-import { reviews } from "../constants";
+import { reviews } from "../constants"; // Use skills data instead of reviews
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const SkillCard = ({ img, name }) => {
   return (
     <figure
       className={twMerge(
         "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex flex-col items-center justify-center gap-2">
         <img
           className="rounded-full bg-white/10"
-          width="32"
-          height="32"
-          alt=""
+          width="48"
+          height="48"
+          alt={name}
           src={img}
         />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium text-white/40">{username}</p>
-        </div>
+        <figcaption className="text-lg font-bold text-white">{name}</figcaption>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
   );
 };
 
-export default function Testimonial() {
+export default function Skills() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Hear From My Clients</h2>
+      <h2 className="text-heading text-center">Skills</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
-          {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+          {firstRow.map((skill) => (
+            <SkillCard key={skill.name} {...skill} />
           ))}
         </Marquee>
         <Marquee reverse pauseOnHover className="[--duration:20s]">
-          {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+          {secondRow.map((skill) => (
+            <SkillCard key={skill.name} {...skill} />
           ))}
         </Marquee>
         <div className="absolute inset-y-0 left-0 w-1/4 pointer-events-none bg-gradient-to-r from-primary"></div>

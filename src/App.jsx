@@ -2,10 +2,10 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experiences from "./sections/Experiences";
-import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Head from "./sections/Head";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <About />
       <Projects />
       <Experiences />
-      <Testimonial />
+      <Skills />
       <Contact />
       <Footer />
     </div>

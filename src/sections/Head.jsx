@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import ResumeButton from "../components/ResumeButton";
 
-// Navigation component WITHOUT Resume button
 function Navigation() {
   return (
     <ul className="flex flex-col items-center gap-6 sm:flex-row sm:gap-8">
@@ -28,6 +27,14 @@ function Navigation() {
           href="#work"
         >
           Work
+        </a>
+      </li>
+      <li>
+        <a
+          className="text-neutral-400 hover:text-white transition-colors"
+          href="#experience"
+        >
+          Experience
         </a>
       </li>
       <li>
