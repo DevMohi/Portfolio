@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroText = () => {
-  const solutions = ["Scalable", "Secure", "Modern", "High-Performance"];
+  const solutions = ["Scalable", "Secure", "Modern", "Performance"];
   const specialties = [
     "Full-Stack Developer",
     1500,
@@ -34,9 +34,7 @@ const HeroText = () => {
           className="flex items-center gap-3 mb-2"
         >
           <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
-          <p className="text-2xl font-mono text-neutral-400">
-            Currently available for work
-          </p>
+          <p className="text-2xl font-mono ">Currently available for work</p>
         </motion.div>
 
         <motion.h1
@@ -49,7 +47,7 @@ const HeroText = () => {
           Hi, I'm <span className="text-white font-semibold">Mohi</span>
         </motion.h1>
 
-        <div className="flex flex-col items-start gap-1 mt-2">
+        <div className="flex flex-col items-start gap-1 mt-2 font-bold">
           <TypeAnimation
             sequence={specialties}
             wrapper="span"
@@ -114,7 +112,7 @@ const HeroText = () => {
           />
 
           <motion.p
-            className="text-5xl font-black text-neutral-300 mt-4"
+            className="text-5xl font-black text-neutral-300 mt-2"
             variants={variants}
             initial="hidden"
             animate="visible"
