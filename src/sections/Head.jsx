@@ -51,14 +51,13 @@ const Head = () => {
   return (
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
-        <div className="flex items-center justify-between py-2 sm:py-0">
+        <div className="flex items-center justify-between py-4 sm:py-4">
           <a
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            Ali
+            Mohi
           </a>
-
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -71,13 +70,13 @@ const Head = () => {
               />
             </button>
           </div>
-
           <nav className="hidden sm:flex">
             <Navigation />
           </nav>
         </div>
       </div>
 
+      {/* Rest of your component remains the same */}
       {isOpen && (
         <motion.div
           className="block overflow-hidden text-center sm:hidden"
@@ -88,7 +87,6 @@ const Head = () => {
         >
           <nav className="pb-5">
             <Navigation />
-            {/* Resume button - only shown in mobile menu */}
           </nav>
         </motion.div>
       )}
