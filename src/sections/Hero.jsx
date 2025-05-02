@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex items-center justify-center min-h-screen overflow-hidden w-full "
+      className="flex items-center justify-center min-h-screen overflow-hidden w-full  "
       id="home"
     >
       {/* Fullscreen Parallax Background */}

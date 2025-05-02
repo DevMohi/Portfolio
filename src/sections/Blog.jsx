@@ -8,7 +8,7 @@ const Blog = () => {
   };
 
   return (
-    <div id="blog" className="c-space my-16 px-0">
+    <div id="blog" className="c-space my-16 ">
       <section className="">
         <h2 className="text-heading text-center mb-8">Blog</h2>
 

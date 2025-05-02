@@ -28,7 +28,7 @@ const SkillCard = ({ img, name }) => {
 
 export default function Skills() {
   return (
-    <div className="items-start mt-25 md:mt-35 c-space" id="skills">
+    <div className="items-start my-16   c-space " id="skills">
       <h2 className="text-heading text-center">Skills</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">

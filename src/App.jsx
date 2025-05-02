@@ -10,13 +10,13 @@ import AboutTabs from "./sections/AboutTabs";
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-      <Head />
-      <Hero />
-      <AboutTabs />
-      <Projects />
-      <Skills />
-      <Blog />
-      <Contact />
+      <Head  />
+      <Hero  />
+      <AboutTabs  />
+      <Projects  />
+      <Skills  />
+      <Blog  />
+      <Contact  />
       <Footer />
     </div>
   );
