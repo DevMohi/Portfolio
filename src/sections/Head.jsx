@@ -33,15 +33,6 @@ function Navigation() {
       <li>
         <a
           className="text-neutral-400 hover:text-white transition-colors"
-          href="#experience"
-        >
-          Experience
-        </a>
-      </li>
-
-      <li>
-        <a
-          className="text-neutral-400 hover:text-white transition-colors"
           href="#skills"
         >
           Skills
@@ -74,7 +65,7 @@ const Head = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40 ">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-4 sm:py-4">
           <a

@@ -13,9 +13,10 @@ const Projects = () => {
   };
   const [preview, setPreview] = useState(null);
   return (
-    <section id="work"
+    <section
+      id="work"
       onMouseMove={handleMouseMove}
-      className="relative c-space section-spacing"
+      className="relative c-space "
     >
       <h2 className="text-heading text-center">My Selected Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />

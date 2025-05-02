@@ -13,7 +13,7 @@ const AboutTabs = () => {
   ];
 
   return (
-    <section className="text-white my-12 " id="about-tabs">
+    <section className="text-white my-16 " id="about">
       {/* Tabs Container */}
       <div className="flex justify-center mb-8">
         <div className="inline-flex bg-gray-800/60 border border-gray-600 rounded-full p-1">

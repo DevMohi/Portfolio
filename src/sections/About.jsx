@@ -9,11 +9,9 @@ const About = () => {
 
   return (
     <section className="c-space" id="about">
-      {/* <h2 className="text-heading text-center text-white">About Me</h2>  */}
-
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
-        <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#334155] relative flex items-end grid-1 p-6 text-white rounded-xl overflow-hidden">
+        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation relative flex items-end grid-1 p-6 text-white rounded-xl overflow-hidden">
           <img
             src="assets/coding-pov.png"
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
@@ -30,7 +28,7 @@ const About = () => {
         </div>
 
         {/* Grid 2 */}
-        <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] grid-2 rounded-xl text-white">
+        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-2 rounded-xl text-white">
           <div
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full relative"
@@ -77,7 +75,7 @@ const About = () => {
         </div>
 
         {/* Grid 3 */}
-        <div className="bg-gradient-to-br from-[#1e293b] via-[#334155] to-[#64748b] grid-3 rounded-xl text-white relative p-6">
+        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-3 rounded-xl text-white relative p-6">
           <div className="z-10 w-[50%]">
             <p className="headtext font-bold">Time Zone</p>
             <p className="subtext font-medium text-white/90">
@@ -91,7 +89,7 @@ const About = () => {
         </div>
 
         {/* Grid 4 */}
-        <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] grid-4 rounded-xl text-white flex items-center justify-center p-6">
+        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-4 rounded-xl text-white flex items-center justify-center p-6">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext font-bold">
               Do you want to start a project together?
@@ -101,7 +99,7 @@ const About = () => {
         </div>
 
         {/* Grid 5 */}
-        <div className="bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#155e75] grid-5 rounded-xl text-white relative p-6">
+        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-5 rounded-xl text-white relative p-6">
           <div className="z-10 w-[50%]">
             <p className="headtext font-bold">Tech Stack</p>
             <p className="subtext font-semibold text-white/95">

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+"use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -26,15 +26,13 @@ export const Timeline = ({ data }) => {
   return (
     <div className="c-space " ref={containerRef} id="experience">
       <section>
-        {/* <h2 className="text-heading text-center">Experience</h2>  */}
-
         {/* Work Experience Section */}
-        <div>
+        <div className="mt-12">
           <h3 className="text-2xl font-semibold text-neutral-300">
             Work Experience
           </h3>
           <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 h-[1px] w-full" />
-          <div ref={ref} className="">
+          <div ref={ref} className="relative">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -46,11 +44,7 @@ export const Timeline = ({ data }) => {
                     <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
                   </div>
                   <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-2xl lg:text-4xl text-neutral-300">
-                    <h3
-                      className={`text-2xl text-neutral-400 ${
-                        item.title === "Sols Energy" ? "text-yellow-500" : ""
-                      }`}
-                    >
+                    <h3 >
                       {item.title}
                     </h3>
                     <h3 className="text-xl md:text-2xl text-neutral-500">
