@@ -146,6 +146,39 @@ export const myProjects = [
       { id: 3, name: "Next.js", path: "/assets/logos/dotnet.svg" },
     ],
   },
+  {
+    id: 1,
+    title: "GlobalCart Express",
+    description: "Cross-border e-commerce platform built with Next.js",
+    video: "https://www.youtube.com/watch?v=sample",
+    images: [
+      "/assets/projects/accessories.jpg",
+      "/assets/projects/elearning.jpg",
+    ],
+    subDescription: [
+      "Built a scalable Next.js app to facilitate international purchases.",
+      "Integrated global product search, cart, and local delivery APIs.",
+      "Added Stripe for secure payments and i18n for localization.",
+      "Responsive frontend with Tailwind and optimized image loading.",
+    ],
+    features: [
+      "Product aggregation from Amazon/eBay",
+      "Custom checkout flow with currency conversion",
+      "Admin dashboard for order management",
+      "Multilingual support with auto-detection",
+    ],
+    challenges: [
+      "Handling inconsistent product data across APIs",
+      "Maintaining currency exchange accuracy",
+      "Ensuring fast performance despite API latency",
+    ],
+    href: "https://globalcartexpress.com",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/dotnet.svg" },
+      { id: 2, name: "Next.js", path: "/assets/logos/dotnet.svg" },
+      { id: 3, name: "Next.js", path: "/assets/logos/dotnet.svg" },
+    ],
+  },
 ];
 
 //   {

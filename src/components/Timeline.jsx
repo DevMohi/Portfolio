@@ -28,25 +28,23 @@ export const Timeline = ({ data }) => {
       <section>
         {/* Work Experience Section */}
         <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-neutral-300">
+          <h3 className="text-2xl font-semibold text-neutral-300 text-center md:text-start">
             Work Experience
           </h3>
-          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 h-[1px] w-full" />
-          <div ref={ref} className="relative">
+          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 h-[1px] w-full " />
+          <div ref={ref} className="relative ">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="flex justify-start pt-10 md:pt-40 md:gap-10"
+                className="flex justify-start pt-10 md:pt-20 md:gap-10 "
               >
                 {/* Sticky elements (Title, Job, Date) */}
                 <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
                   <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
                     <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
                   </div>
-                  <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-2xl lg:text-4xl text-neutral-300">
-                    <h3 >
-                      {item.title}
-                    </h3>
+                  <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-2xl lg:text-4xl text-neutral-300 ">
+                    <h3>{item.title}</h3>
                     <h3 className="text-xl md:text-2xl text-neutral-500">
                       {item.job}
                     </h3>
@@ -57,11 +55,11 @@ export const Timeline = ({ data }) => {
                 </div>
 
                 {/* Content (Experience details) */}
-                <div className="relative w-full pl-4 pr-4 md:pl-4">
+                <div className="relative w-full mx-10 md:mx-0 md:pl-4">
                   <div className="block mb-4 text-xl font-bold text-left text-neutral-300 md:hidden">
-                    <h3>{item.title}</h3>
-                    <h3>{item.job}</h3>
-                    <h3>{item.date}</h3>
+                    <h3 className="text-center md:text-start ">{item.title}</h3>
+                    <h3 className="text-center md:text-start">{item.job}</h3>
+                    <h3 className="text-center md:text-start">{item.date}</h3>
                   </div>
 
                   {/* Bullet Points for Content */}

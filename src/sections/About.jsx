@@ -28,7 +28,7 @@ const About = () => {
         </div>
 
         {/* Grid 2 */}
-        <div className="bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-2 rounded-xl text-white">
+        <div className="hidden md:block bg-gradient-to-r from-indigo to-storm hover:bg-royal hover-animation grid-2 rounded-xl text-white">
           <div
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full relative"

@@ -131,7 +131,7 @@ const Contact = () => {
       </div>
 
       <div className="hidden md:block">
-        <img src="../../public/assets/astro.png" alt="astro" />
+        <img src="/assets/astro.png" alt="astro" />
       </div>
     </section>
   );

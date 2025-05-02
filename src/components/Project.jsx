@@ -18,23 +18,28 @@ const Project = ({
 
   return (
     <>
-      <div className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0">
+      <div className="flex md:flex-wrap  justify-between px-4 md:px-0  py-6 md:py-15  ">
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <p className="text-sm md:text-2xl mb-1">{title}</p>
+          <div className="flex gap-5 text-sand">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span className="text-sm" key={tag.id}>
+                {tag.name}
+              </span>
             ))}
           </div>
         </div>
-        <button
-          onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
-        >
-          Details
-          <img src="assets/arrow-right.svg" className="w-5" />
-        </button>
+        <div className="flex items-start md:items-center">
+          <button
+            onClick={() => setIsHidden(true)}
+            className="flex items-center gap-1 cursor-pointer hover-animation text-sm mt-2 md:mt-0"
+          >
+            Details
+            <img src="assets/arrow-right.svg" className="w-5" />
+          </button>
+        </div>
       </div>
+
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
       {isHidden && (
         <ProjectDetails
