@@ -1,6 +1,6 @@
 export const myProjects = [
   {
-    id: 2,
+    id: 1,
     title: "PropertyPro 🏠",
     description:
       "Full-stack rental management platform with role-based access and payment integration.",
@@ -29,13 +29,76 @@ export const myProjects = [
       "Transitioned from React to Next.js with Redux — managing folder structure and layout logic was complex.",
     ],
     href: "https://basa-vara-client.vercel.app/", // Replace with your actual client link
-    backendhref: "https://github.com/DevMohi/BasaVara-Frontend",
-    frontendhref: "https://github.com/DevMohi/BasaVara-Server",
+    backendcodeLink: "https://github.com/DevMohi/BasaVara-Frontend",
+    frontendcodeLink: "https://github.com/DevMohi/BasaVara-Server",
     tags: [
       { id: 1, name: "Next.js", path: "/assets/logo-svg/next.svg" },
       { id: 2, name: "Tailwind", path: "/assets/logo-svg/tailwind.svg" },
-      { id: 4, name: "MongoDB", path: "/assets/logo-svg/mongodb.svg" },
+      { id: 4, name: "MongoDB", path: "/assets/logo-svg/mongoose.svg" },
       { id: 5, name: "Redux", path: "/assets/logo-svg/redux.svg" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Next-Mart",
+    description: "Full-stack ecommerce product management.",
+    video: "N/A",
+    images: ["/assets/projects/project2-1.png"],
+    subDescription: [
+      "Built a modern rental platform using Next.js,Redux, Express, and MongoDB.",
+      "Enabled users to manage and buy products in one place.",
+      "Implemented secure role-based routing and SSL Comemrz integration.",
+    ],
+    features: [
+      "Role-based dashboards (Admin, Customer) using jwt",
+      "SSL Customer rent payment gateway integration",
+      "Backend Validated with zod validation",
+    ],
+    challenges: [
+      "Managing nested state with Redux for cart logic took careful planning to avoid unwanted re-renders.",
+      "Integrating SSLCommerz payments in a server-rendered Next.js app required handling CORS and asynchronous redirects securely.",
+    ],
+
+    href: "N/A", // Replace with your actual client link
+    backendcodeLink: "N/A",
+    frontendcodeLink: "N/A",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logo-svg/next.svg" },
+      { id: 2, name: "Tailwind", path: "/assets/logo-svg/tailwind.svg" },
+      { id: 4, name: "Mongoose", path: "/assets/logo-svg/mongoose.svg" },
+      { id: 5, name: "Redux", path: "/assets/logo-svg/redux.svg" },
+    ],
+  },
+  {
+    id: 2,
+    title: "DRForged",
+    description:
+      "A premium custom-forged wheel brand website designed to showcase high-performance wheels and streamline order customization.",
+    video: "N/A",
+    images: [
+      "/assets/projects/project3-1.png",
+      "/assets/projects/project3-2.png",
+    ],
+    subDescription: [
+      "Developed a fully responsive WordPress website tailored for a luxury automotive brand.",
+      "Collaborated with designers and stakeholders to bring a high-end, minimal aesthetic to life.",
+      "Integrated WooCommerce for custom wheel orders and optimized performance with caching and CDN.",
+    ],
+    features: [
+      "Product configurator for custom wheel selection",
+      "WooCommerce integration for seamless order management",
+      "Advanced product filtering and use of acf and cpt",
+    ],
+    challenges: [
+      "Balancing high-resolution image loading with site speed and performance targets.",
+      "Implementing dynamic product customization options using available WordPress plugins and custom CSS/JS.",
+      "Maintaining brand consistency across mobile, tablet, and desktop breakpoints.",
+    ],
+    href: "https://drforged.com", // Live site
+    backendcodeLink: "N/A", // WordPress backend, likely not publicly accessible
+    frontendcodeLink: "N/A", // Same as live site since it's WordPress
+    tags: [
+      { id: 1, name: "WordPress", path: "/assets/logo-svg/wordpress.svg" },
     ],
   },
 ];
