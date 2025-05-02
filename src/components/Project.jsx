@@ -7,18 +7,18 @@ const Project = ({
   description,
   subDescription,
   href,
-  image,
+  images,
   tags,
-  setPreview,
+  video,
+  features,
+  challenges,
+  futurePlans,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+
   return (
     <>
-      <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}
-      >
+      <div className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0">
         <div>
           <p className="text-2xl">{title}</p>
           <div className="flex gap-5 mt-2 text-sand">
@@ -31,7 +31,7 @@ const Project = ({
           onClick={() => setIsHidden(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
         >
-          Read More
+          Details
           <img src="assets/arrow-right.svg" className="w-5" />
         </button>
       </div>
@@ -41,9 +41,13 @@ const Project = ({
           title={title}
           description={description}
           subDescription={subDescription}
-          image={image}
+          images={images} // Pass images as an array here
           tags={tags}
           href={href}
+          video={video}
+          features={features}
+          challenges={challenges}
+          futurePlans={futurePlans}
           closeModal={() => setIsHidden(false)}
         />
       )}

@@ -51,7 +51,10 @@ const Contact = () => {
     }
   };
   return (
-    <section id="contact" className="relative flex items-center c-space my-12">
+    <section
+      id="contact"
+      className="relative flex items-center justify-between c-space my-12"
+    >
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
@@ -60,8 +63,8 @@ const Contact = () => {
         refresh
       />
       {showAlert && <Alert type={alertType} text={alertMessage} />}
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
-        <div className="flex flex-col items-start w-full gap-5 mb-10">
+      <div className=" flex flex-col items-center justify-center max-w-md p-5 border border-white rounded-2xl bg-primary">
+        <div className="flex flex-col items-start w-full gap-5 mb-10 ">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
             Whether you're loking to build a new website, improve your existing
@@ -125,6 +128,10 @@ const Contact = () => {
             {!isLoading ? "Send" : "Sending..."}
           </button>
         </form>
+      </div>
+
+      <div className="hidden md:block">
+        <img src="../../public/assets/astro.png" alt="astro" />
       </div>
     </section>
   );
