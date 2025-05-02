@@ -1,6 +1,7 @@
-"use client";
+/* eslint-disable react/prop-types */
+
 import { useScroll, useTransform, motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -23,39 +24,17 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="c-space section-spacing" ref={containerRef} id="experience">
-      <section className="section-spacing">
-        <h2 className="text-heading text-center">Experience</h2>
-
-        {/* Education Section */}
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-neutral-300">Education</h3>
-          <div className="bg-dashed-line mt-4 h-[1px] w-full" />
-          <div className="mt-6 space-y-6 px-4 md:px-0">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <p className="font-bold text-xl text-neutral-100">
-                UCSI University Malaysia
-              </p>
-              <p className="text-sm text-neutral-400">2020 - 2023</p>
-              <p className="text-neutral-300">Course: Bachelors In Computing</p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <p className="font-bold text-xl text-neutral-100">
-                Sunshine Grammar School
-              </p>
-              <p className="text-sm text-neutral-400">O Levels & A Levels</p>
-              <p className="text-neutral-300">Graduated: 2019</p>
-            </div>
-          </div>
-        </div>
+    <div className="c-space " ref={containerRef} id="experience">
+      <section>
+        {/* <h2 className="text-heading text-center">Experience</h2>  */}
 
         {/* Work Experience Section */}
-        <div className="mt-12">
+        <div>
           <h3 className="text-2xl font-semibold text-neutral-300">
             Work Experience
           </h3>
           <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 h-[1px] w-full" />
-          <div ref={ref} className="relative pb-20">
+          <div ref={ref} className="">
             {data.map((item, index) => (
               <div
                 key={index}
