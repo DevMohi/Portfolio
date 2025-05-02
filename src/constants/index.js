@@ -76,7 +76,7 @@ export const mySocials = [
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/mohammed-mohi-uddin/",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: "/assets/socials/linkedin.svg",
   },
   {
     name: "Instagram",

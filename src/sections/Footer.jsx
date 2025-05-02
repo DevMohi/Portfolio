@@ -1,4 +1,5 @@
 import { mySocials } from "../constants";
+
 const Footer = () => {
   return (
     <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
@@ -11,11 +12,15 @@ const Footer = () => {
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
           <a href={social.href} key={index}>
-            <img src={social.icon} className="w-5 h-5" alt={social.name} />
+            <img
+              src={social.icon}
+              alt={social.name}
+              className="w-5 h-5 invert hover:scale-110 transition-transform duration-200"
+            />
           </a>
         ))}
       </div>
-      <p>© 2025 Ali. All rights reserved.</p>
+      <p>© 2025 Mohi. All rights reserved.</p>
     </section>
   );
 };
