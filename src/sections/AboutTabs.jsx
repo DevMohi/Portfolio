@@ -16,11 +16,11 @@ const AboutTabs = () => {
     <section className="text-white my-16 " id="about">
       {/* Tabs Container */}
       <div className="flex justify-center mb-8">
-        <div className="inline-flex bg-gray-800/60 border border-gray-600 rounded-full p-1">
+        <div className="inline-flex bg-gray-800/60 border border-gray-600 rounded-full p-1 ">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`px-6 py-2 rounded-full font-medium text-sm sm:text-base transition-all duration-300
+              className={`px-6 py-2 rounded-full font-medium text-sm sm:text-base transition-all duration-300 cursor-pointer
                 ${
                   activeTab === tab.id
                     ? "bg-indigo text-white shadow hover:bg-royal"

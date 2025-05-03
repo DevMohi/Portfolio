@@ -25,7 +25,7 @@ const HeroText = () => {
   return (
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left">
       {/* Desktop View */}
-      <div className="flex-col hidden md:flex c-space">
+      <div className="flex-col hidden md:flex ">
         <motion.div
           variants={variants}
           initial="hidden"

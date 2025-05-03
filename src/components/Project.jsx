@@ -23,9 +23,9 @@ const Project = ({
       <div className="flex md:flex-wrap  justify-between px-4 md:px-0  py-6 md:py-15  ">
         <div>
           <p className="text-sm md:text-2xl mb-1">{title}</p>
-          <div className="flex gap-5 text-sand">
+          <div className="flex gap-2 md:gap-5 text-sand">
             {tags.map((tag) => (
-              <span className="text-xs" key={tag.id}>
+              <span className="text-xs md:text-xl" key={tag.id}>
                 {tag.name}
               </span>
             ))}
@@ -34,7 +34,7 @@ const Project = ({
         <div className="flex items-start md:items-center">
           <button
             onClick={() => setIsHidden(true)}
-            className="flex items-center gap-1 cursor-pointer hover-animation text-sm  md:mt-0"
+            className="flex items-center gap-1 cursor-pointer hover-animation text-xs md:text-xl  md:mt-0"
           >
             Details
             <img src="assets/arrow-right.svg" className="w-5" />

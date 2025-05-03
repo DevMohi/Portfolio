@@ -4,8 +4,8 @@ import { myProjects } from "../constants";
 const Projects = () => {
   return (
     <section id="work" className="relative c-space my-16 ">
-      <h2 className="text-heading text-center">My Selected Projects</h2>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
+      <h2 className="text-xl md:text-2xl text-center">My Selected Projects</h2>
+      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-6 md:mt-12  h-[1px] w-full" />
       {myProjects.map((project) => (
         <Project key={project.id} {...project} />
       ))}

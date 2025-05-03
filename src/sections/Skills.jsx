@@ -29,7 +29,7 @@ const SkillCard = ({ img, name }) => {
 export default function Skills() {
   return (
     <div className="items-start my-16   c-space " id="skills">
-      <h2 className="text-heading text-center">Skills</h2>
+      <h2 className="text-center text-xl md:text-2xl">Skills</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((skill) => (

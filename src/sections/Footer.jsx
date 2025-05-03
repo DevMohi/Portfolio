@@ -20,7 +20,9 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p>© 2025 Mohi. All rights reserved.</p>
+      <div className="mx-auto md:mx-0">
+        <p className="">© 2025 Mohi. All rights reserved.</p>
+      </div>
     </section>
   );
 };

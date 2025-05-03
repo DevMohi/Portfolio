@@ -28,7 +28,7 @@ export const Timeline = ({ data }) => {
       <section>
         {/* Work Experience Section */}
         <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-neutral-300 text-center md:text-start">
+          <h3 className="text-xl md:text-2xl font-semibold text-neutral-300 text-center md:text-start">
             Work Experience
           </h3>
           <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-4 h-[1px] w-full " />
@@ -55,17 +55,24 @@ export const Timeline = ({ data }) => {
                 </div>
 
                 {/* Content (Experience details) */}
-                <div className="relative w-full mx-10 md:mx-0 md:pl-4">
+                <div className="relative w-full mx-10 md:mx-0 md:pl-4 ">
                   <div className="block mb-4 text-xl font-bold text-left text-neutral-300 md:hidden">
                     <h3 className="text-center md:text-start ">{item.title}</h3>
-                    <h3 className="text-center md:text-start">{item.job}</h3>
-                    <h3 className="text-center md:text-start">{item.date}</h3>
+                    <h3 className="text-center text-sm  md:text-start">
+                      {item.job}
+                    </h3>
+                    <h3 className="hidden md:block text-center md:text-start">
+                      {item.date}
+                    </h3>
                   </div>
 
                   {/* Bullet Points for Content */}
                   <ul className="list-disc pl-5 space-y-2">
                     {item.contents.map((content, index) => (
-                      <li key={index} className="font-normal text-neutral-400">
+                      <li
+                        key={index}
+                        className="font-normal text-neutral-400 text-sm md:text-xl"
+                      >
                         {content}
                       </li>
                     ))}

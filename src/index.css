@@ -97,6 +97,7 @@ body {
 }
 
 /* About Section */
+
 .grid-1 {
   @apply row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
@@ -135,4 +136,22 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+/* Astro  */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-astronaut {
+  animation: floating 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
 }
