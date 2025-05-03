@@ -11,6 +11,8 @@ const ProjectDetails = ({
   href,
   tags,
   closeModal,
+  frontendcodeLink,
+  backendcodeLink,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const isValidVideo = video && video !== "N/A";
@@ -127,7 +129,7 @@ const ProjectDetails = ({
             </div>
 
             {/* Links */}
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-4">
               {href && (
                 <a
                   href={href}
@@ -144,7 +146,32 @@ const ProjectDetails = ({
                 </a>
               )}
 
-              {isValidVideo && (
+              <div>
+                {frontendcodeLink && frontendcodeLink !== "N/A" && (
+                  <a
+                    href={frontendcodeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-medium text-blue-400 hover:text-blue-500 transition-colors text-sm sm:text-base"
+                  >
+                    Frontend Code
+                  </a>
+                )}
+              </div>
+              <div>
+                {backendcodeLink && backendcodeLink !== "N/A" && (
+                  <a
+                    href={backendcodeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-medium text-blue-400 hover:text-blue-500 transition-colors text-sm sm:text-base"
+                  >
+                    Backend Code
+                  </a>
+                )}
+              </div>
+
+              {video && video !== "N/A" && (
                 <a
                   href={video}
                   target="_blank"
@@ -162,7 +189,7 @@ const ProjectDetails = ({
             </div>
 
             {/* Tags */}
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-center">
               <div className="flex gap-3">
                 {tags &&
                   tags.map((tag) => (

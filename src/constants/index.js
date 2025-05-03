@@ -60,8 +60,8 @@ export const myProjects = [
     ],
 
     href: "N/A", // Replace with your actual client link
-    backendcodeLink: "N/A",
-    frontendcodeLink: "N/A",
+    backendcodeLink: "https://github.com/DevMohi/Next-Mart-Server",
+    frontendcodeLink: "https://github.com/DevMohi/Nextmart-Client",
     tags: [
       { id: 1, name: "Next.js", path: "/assets/logo-svg/next.svg" },
       { id: 2, name: "Tailwind", path: "/assets/logo-svg/tailwind.svg" },

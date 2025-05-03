@@ -13,6 +13,8 @@ const Project = ({
   features,
   challenges,
   futurePlans,
+  frontendcodeLink,
+  backendcodeLink,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
 
@@ -23,7 +25,7 @@ const Project = ({
           <p className="text-sm md:text-2xl mb-1">{title}</p>
           <div className="flex gap-5 text-sand">
             {tags.map((tag) => (
-              <span className="text-sm" key={tag.id}>
+              <span className="text-xs" key={tag.id}>
                 {tag.name}
               </span>
             ))}
@@ -32,7 +34,7 @@ const Project = ({
         <div className="flex items-start md:items-center">
           <button
             onClick={() => setIsHidden(true)}
-            className="flex items-center gap-1 cursor-pointer hover-animation text-sm mt-2 md:mt-0"
+            className="flex items-center gap-1 cursor-pointer hover-animation text-sm  md:mt-0"
           >
             Details
             <img src="assets/arrow-right.svg" className="w-5" />
@@ -54,6 +56,8 @@ const Project = ({
           challenges={challenges}
           futurePlans={futurePlans}
           closeModal={() => setIsHidden(false)}
+          frontendcodeLink={frontendcodeLink}
+          backendcodeLink={backendcodeLink}
         />
       )}
     </>
