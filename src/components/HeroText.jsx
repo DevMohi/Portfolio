@@ -53,7 +53,7 @@ const HeroText = () => {
             wrapper="span"
             speed={50}
             repeat={Infinity}
-            className="text-lg text-neutral-400 font-mono"
+            className="text-lg text-indigo-200 font-mono font-extrabold"
           />
 
           <motion.p

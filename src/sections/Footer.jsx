@@ -11,7 +11,12 @@ const Footer = () => {
       </div>
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
+          <a
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             <img
               src={social.icon}
               alt={social.name}
@@ -21,7 +26,7 @@ const Footer = () => {
         ))}
       </div>
       <div className="mx-auto md:mx-0">
-        <p className="">© 2025 Mohi. All rights reserved.</p>
+        <p>© 2025 Mohi. All rights reserved.</p>
       </div>
     </section>
   );

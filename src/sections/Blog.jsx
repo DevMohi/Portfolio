@@ -24,18 +24,18 @@ const Blog = () => {
             <p className="mt-2 text-sm md:text-xl text-neutral-200">
               {blogPost.description}
             </p>
-            <div className="mt-4 flex flex-wrap justify-between items-center gap-2">
-              <div className="flex flex-wrap gap-2">
+            <div className="mt-4 flex justify-between items-center gap-2">
+              <div className="flex gap-2">
                 {blogPost.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-white/10 text-neutral-200 text-xs rounded-full"
+                    className="px-3 py-1 bg-white/10 text-neutral-200 text-xs md:text-sm mt-0 md:mt-5 rounded-full hidden md:block"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <button className="px-2 py-2 border border-white/20 bg-white/10 text-white rounded-md hover:bg-royal hover:shadow-lg transition-all duration-300">
+              <button className="px-4 py-2 sm:px-6 sm:py-3 border border-white/20 bg-white/10 text-white rounded-md hover:bg-royal hover:shadow-lg transition-all duration-300 cursor-pointer text-xs md:text-xl">
                 View
               </button>
             </div>

@@ -105,15 +105,40 @@ const About = () => {
             color="#ffffff"
             refresh={true}
           />
-          <div className="z-10 w-[50%]">
+          <div className="z-10 w-[40%] md:w-[60%]">
             <p className="headtext font-bold">Tech Stack</p>
             <p className="subtext font-semibold text-white/95">
-              I specialize in a variety of languages, frameworks, and tools that
-              allow me to build robust and scalable applications.
+              I specialize in MERN stack that allows me to build robust and
+              scalable applications.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
             <Frameworks />
+          </div>
+          {/* Skills Text */}
+
+          {/* Scroll down arrow */}
+
+          <div className="flex absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce">
+            <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 text-white font-semibold text-sm md:text-xl">
+              <p className="hidden md:block">Skills</p>
+            </div>
+            <a href="#skills">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 md:h-8 md:w-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2" 
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
